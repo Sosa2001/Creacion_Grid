@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Ajusta las columnas */
+    align-items: center;
+    margin: 2vh;
+    height: 10vh;
+    background-color: #f0f8ff;
+}
+
+.line {
+    height: 5px;
+    background: linear-gradient(transparent, rgba(79, 84, 84, 0.5), transparent);
+    margin: 20px 0;
+}
+
+header h1 {
+    grid-column: 1; /* El título en la primera columna */
+    font-size: 5vh;
+}
+
+nav {
+    grid-column: 2; /* El nav en la segunda columna */
+}
+
+nav ul {
+    display: inline; /* Cambiado a inline para estar en una sola línea */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Cambiado a inline para que los elementos de la lista estén en línea */
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart-icon {
+    grid-column: 3; /* La imagen del carrito ahora está en la tercera columna */
+    text-align: left; /* Alineado a la izquierda */
+}
+
+.cart-image {
+    height: 40px; /* Ajusta el tamaño aquí */
+    width: 40px; /* Ajusta el tamaño aquí */
+    border-radius: 50%; /* Border radius de 50% */
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vh;
+}
+
+.product-image {
+    text-align: center;
+    padding: 0vh 20vh;
+}
+
+.product {
+    height: 60vh;
+    width: 60vh;
+}
+
+.image {
+    height: 15vh;
+    width: 15vh;
+}
+
+.product-image img {
+    max-width: 100%;
+}
+
+.thumbnail-container {
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail-container img {
+    cursor: pointer;
+}
+
+.product-details {
+    max-width: 80vh;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details h2 {
+    font-size: 18px;
+    color: gray;
+}
+
+.product-details h3 {
+    font-size: 24px;
+}
+
+.price {
+    display: block; /* Cambiado a bloque para que esté alineado a la izquierda */
+    margin: 10px 0;
+}
+
+.price-line {
+    display: block; /* Cambiado a bloque para que esté alineado a la izquierda */
+}
+
+.discounted-price {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.discount-button {
+    background-color: #b3c7ae;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-top: 10px; /* Para agregar un espacio entre la línea de precio y el original */
+}
+
+.quantity {
+    display: block; /* Cambiado a bloque para que esté alineado a la izquierda */
+    margin: 10px 0;
+}
+
+.quantity button {
+    background-color: #b3c7ae;
+    color: black;
+    padding: 10px;
+    cursor: pointer;    
+}
+
+.add-to-cart {
+    background-color: #b3c7ae;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 90%;
+    display: inline-block; /* Cambiado para mantener el alineado a la izquierda */
+}

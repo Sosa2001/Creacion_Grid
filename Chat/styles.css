@@ -1,0 +1,85 @@
+* {
+    font-size: 3vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4c4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    min-width: 80hv;
+    width: 100%;
+    background-color: rgba(240,248,255,255);
+    border-radius: 40px;
+}
+
+.message-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    position: relative;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    left: -120px; 
+}
+
+.message {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px; 
+    position: relative;
+}
+
+.message-container.left {
+    max-width: 2fr;
+    grid-template-columns: 2fr 3fr;
+}
+
+.message-container.left .message {
+    background-color: #DCF8C6;
+    border-top-left-radius: 0;
+}
+
+.message-container.right {
+    max-width: 2fr;
+    grid-template-columns: 2fr; 
+    justify-content: end;
+}
+
+.message-container.right .message {
+    background-color: #f1f5fb;
+    border-top-right-radius: 0;
+    justify-self: end;
+}
+
+.timestamp {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 2vh;
+    color: #888;
+    display: flex;
+    align-items: center;
+}
+
+
+.tick, .double-tick {
+    width: 15px;
+    height: auto;
+    margin-right: 3px;
+}
+
+.time {
+    margin-right: 5px;
+}
+
